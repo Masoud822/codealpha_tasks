@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to the tiny takes</title>
+    <style>
+         body{
+            background: url(patterned.png) no-repeat;
+  mask-image: linear-gradient (rgb(255, 255, 255), transparent);
+        }
+        div.a{
+            background-image: linear-gradient(rgb(12, 12, 65), transparent 200%);
+            width: 100%;
+            position:absolute;
+            left: -1px;
+            top: 0%; 
+            box-shadow: 10px;
+            border:2px;
+           border-bottom-left-radius: 25px;
+           border-bottom-right-radius: 25px;
+           box-shadow: inset;
+        }
+        div.new{
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            
+        }
+      ul{
+        overflow: hidden;
+        list-style-type:none;
+          margin:0;
+          padding:0;
+      }
+      a{
+        text-decoration: none;
+      }
+      li.a{
+        color:aliceblue;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+       
+      } 
+      .selected{
+        color: rgb(0, 0, 0);
+        background-color: rgb(249, 172, 25);
+        background-size:auto ;
+        font-size: medium;
+        border-radius: 60px;
+        text-align: center;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        padding: left 4px;
+        border:none;
+        height:35px;
+        width: 80px;
+        position: relative;
+        bottom: 1px;
+        margin-right : 20px;
+        margin left : 10px;
+      }
+      .search{
+        border-radius: 25px;
+
+      }
+      .b{
+        color:aliceblue;
+        font-size: medium;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-weight: <weight>;
+        font-style: normal;
+        margin-right : 15px;
+        position: relative;
+        top: 5px;
+        
+      }
+      .b:hover{
+        text-decoration: underline;
+      }
+      .selected:hover{
+        background-color: darkgrey;
+      }
+     nav{
+        align-items: center;
+        justify-content: space-between;
+      }
+      .c{
+        display: inline-block;
+        transform: rotate(-30deg);
+      }
+      p.p{
+        align-items: center;
+      }
+      .m {
+        margin-left: 15px;
+      }
+    </style>
+</head>
+
+<body  >
+    <div class="a">
+        <nav>
+            <ul>
+       <h3 class="m"> <li class="a" ><span style="color: rgb(249, 172, 25) ;" ><big>T</big></span>he
+        <span style="color: rgb(249, 172, 25)" class="c"><big >T</big></span>iny
+        <span style="color: rgb(249, 172, 25)"><big>T</big></span>akes</li>
+        <li style="float: right;" class="a" ><a class="selected" style=" color: black;" href=""><button class="selected" border="none"> Sign Up</button></li></a>
+        <li style="float: right;"  class="a"><a "href="" class="b">LogIn</li></a>
+       <!-- <li style="float: center;" class="a"><search ><input type="search" class="search" placeholder="search" >
+            <a href=""><img src="search_24dp_FILL0_wght400_GRAD0_opsz24.png" width="15"></a></search></li></a>-->
+    </h3>
+    </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="new">
+       <p class="p"><big><h1 align="center">Get your Photo Creations Explored..!</h1></big></p> 
+       <br>
+       <p><h1 align="center" style="color:  rgb(249, 172, 25);" id="vary" ></h1></p>
+       <script> 
+        function textvariation() {
+            var text = ["Upload your photographs...", "Interact with others!", "Own a Gallery"];
+            var i = 0;
+            function updateText() {
+                document.getElementById("vary").innerHTML = text[i];
+                i = (i + 1) % text.length;
+                setTimeout(updateText, 2000);
+            }
+            
+            updateText();
+        }
+
+        window.onload = textvariation;
+    </script>
+   
+    </div>
+
+</body>
+
+</html>

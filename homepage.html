@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+         body{
+            background: url(background.jpg) repeat;
+            background-size: auto;
+            mask-image: linear-gradient (rgb(255, 255, 255), transparent);
+        }
+        div.a{
+            background-image: linear-gradient(rgb(12, 12, 65), transparent 200%);
+            width: 100%;
+            height:65px;
+            position: fixed;
+            left: -1px;
+            top: 0%; 
+            box-shadow: 10px;
+            border:2px;
+           border-bottom-left-radius: 25px;
+           border-bottom-right-radius: 25px;
+           box-shadow: inset;
+
+        }
+        div.new{
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            
+        }
+      ul{
+        overflow: hidden;
+        list-style-type:none;
+          margin:0;
+          padding:0;
+      }
+      a{
+        text-decoration: none;
+      }
+      li.a{
+        color:aliceblue;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      } 
+      li.s{
+        margin-left: 300px;
+        position: relative;
+        bottom:30px;
+      }
+      li.d{
+        position: relative;
+        bottom:60px;
+      }
+    .search{ 
+        border-radius: 25px;
+        margin-left: 30px;
+        width:500px;
+        height:30px;
+        border: 3px;
+        border-color: black;
+       
+    }
+      .selected{
+        color: rgb(0, 0, 0);
+        background-color: rgb(249, 172, 25);
+        background-size:auto ;
+        font-size: medium;
+        border-radius: 60px;
+        text-align: center;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        padding: left 4px;
+        border:none;
+        height:35px;
+        width: 80px;
+        position: relative;
+        bottom: 1px;
+        margin-right : 20px;
+        margin left : 10px;
+      }
+      .log{
+        color:aliceblue;
+        font-size: medium;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-weight: <weight>;
+        font-style: normal;
+        margin-right : 15px;
+        position: relative;
+        top: 8px; 
+      }
+      .log:hover{
+        color:rgb(249, 172, 25);
+        text-decoration: underline;
+      }
+      .b{
+        color:aliceblue;
+        font-size: medium;
+        display: inline-block;
+        font-family: "Quicksand", sans-serif;
+        font-weight: <weight>;
+        font-style: normal;
+        margin-right : 15px;
+        position: relative;
+        top: 5px; 
+      }
+      .b:hover{
+        background-color: rgba(0, 0, 0, 0.447);
+        border-radius: 5px;
+      }
+      .selected:hover{
+        background-color: darkgrey;
+      }
+     nav{
+        align-items: center;
+        justify-content: space-between;
+      }
+      .c{
+        display: inline-block;
+        transform: rotate(-30deg);
+      }
+      p.p{
+        align-items: center;
+      }
+      .m {
+        margin-left: 15px;
+      }
+      img.i{
+        position: relative;
+      }
+      div.gallery{
+          margin: 26px;
+          border:2px solid rgb(12, 12, 65);
+          border-radius: 25px;
+          float:left;
+          width:320px;
+          height : 470px ;
+          box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.466), 0 6px 20px 0 rgba(0, 0, 0, 0.466);
+          transition : width 0.05;
+          text-align: center;
+          background-color: aliceblue;
+      }
+      div.gallery img {
+       /* position: relative;*/
+        padding-top: 5px;
+        width : 290px;
+        height: 370px;
+        border-radius: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        div.gallery:hover{
+            transform: scale(1.1)  ;
+            box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.466), 0 12px 40px 0 rgba(0, 0, 0, 0.466);
+        }
+        div.text{
+          text-align: center;
+          font-family: "Quicksand", sans-serif;
+          font-size: large;
+          padding: 7px;
+          color:  rgb(12, 12, 65);
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+          position: relative;
+        }
+        div.un{
+           text-align: left;
+           color: rgb(12, 12, 65);
+           font-family: "Quicksand", sans-serif;
+           padding:2px;
+           margin-left: 15px;
+           margin-top: 4px;
+           text-decoration:underline;
+        }
+    </style>
+    
+</head>
+
+<body  >
+    <div class="a">
+        <nav>
+            <ul>
+        <h3 class="m">
+        <li class="a" ><span style="color: rgb(249, 172, 25) ;" ><big>T</big></span>he
+        <span style="color: rgb(249, 172, 25)" class="c"><big >T</big></span>iny
+        <span style="color: rgb(249, 172, 25)"><big>T</big></span>akes</li>
+       <!-- <li style="float: right;" class="a" ><a class="selected" style=" color: black;" href=""><button class="selected" border="none"> Sign Up</button></li></a>-->
+        <li style="float: center;" class="s"><search ><input type="search" class="search" placeholder="  search" >
+        <a href=""><img src="search.png" width="20" class="b" width="30"></a></search></a></li>
+        <li style="float: right;"  class="d"><a href="profile.html" class="b" id="profile"><img src="account.png" width="30" ></li></a>
+        <li style="float: right;"  class="d"><a href="" class="log" id="logout" onclick="logout()">LogOut</li></a>
+        <li style="float: right;"  class="d"><a href="upload.html" class="b" id="add"><img src="add.png" width="30" ></li></a>
+        <script>
+            function logout(){
+                var question= confirm("Are you sure you want to LogOut");
+                var back=document.getElementById("logout");
+                if (question==true){
+                   back.href="interface.html"
+                }
+                else back.href="homepage.html";
+            }
+        </script>
+    </h3>
+    </ul>
+        </nav>
+    </div>
+    <br><br><br><br>
+     <div class="gallery">
+        <img src="sea4.jpg" >
+        <div class="text"><span style="color:rgb(249, 172, 25) ;">A</span> golden hour shot</div>
+    </div>
+    <div class="gallery">
+      <img src="wheel.jpg">
+        <div class="text"><span style="color:rgb(249, 172, 25) ;">W</span>heel Alexandria Egypt with an extraordinary sunset</div>
+    </div>
+    <div class="gallery">
+      <img src="sunset1.jpg">
+        <div class="text"><span style="color:rgb(249, 172, 25) ;">G</span>TA like unexpected sunset color</div>
+    </div>
+   <div class="gallery">
+      <img src="sea3.jpg">
+       
+        <div class="text"><span style="color:rgb(249, 172, 25) ;">S</span>un with sea giving a golden reflection</div>
+    </div>
+
+    <div class="gallery"><img src="sea2.jpg"></div>
+    <div class="gallery"><img src="moon2.jpg"></div>
+    <div class="gallery"><img src="sea1.jpg"></div>
+    <div class="gallery"><img src="moon1.jpg" ></div>
+    <div class="gallery"><img src="moon3.jpg" ></div>
+    <div class="gallery"><img src="sea3.jpg" ></div>
+   
+  
+
+</body>
+
+</html>
